@@ -1,0 +1,114 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+/* Main container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styling */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
+}
+
+/* Submit button */
+form button {
+  grid-column: span 2;
+  padding: 10px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #357abd;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #4a90e2;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form button {
+    grid-column: span 1;
+  }
+}
